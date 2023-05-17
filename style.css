@@ -1,0 +1,146 @@
+html, body {margin:0;box-sizing: border-box;}
+body {background-color:rgb(38, 85, 139, 1);}
+
+
+/* Card Container */
+.carousel-course-card-cell {
+    width: 350px;
+    height: 620px; /* 600px */
+    margin: 50px 20px 50px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #fff;
+    border-radius: 10px;
+    box-shadow:
+    5px 5px 5px rgba(0,0,0,.1);
+    text-align: center;
+    counter-increment: carousel-cell;
+    opacity: 0.5;
+    transition: box-shadow 0.8s, opacity 0.5s;
+}
+.carousel-course-card-cell.is-selected {
+    box-shadow:
+      5px 5px 5px rgba(0,0,0,.2),
+      10px 10px 30px rgba(0,0,0,.3);
+    opacity: 1;
+}
+
+/* Card Image */
+.card-cell-thumbnail {
+    width: 100%;
+    height: auto;
+
+}
+.card-cell-thumbnail img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Card Text Content */
+.card-cell-content {
+    padding: 30px 30px 0 30px;
+    flex-grow: 1;
+}
+.card-cell-text {
+  width: 100%;
+  margin: 0 auto;
+}
+.card-cell-text h2 {
+    margin: 0 auto 10px auto;
+  	font: 600 24px 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+}
+.card-cell-text h3 {
+    margin: 0 auto 30px auto;
+  	font: 600 16px 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+  color: #14c2a3
+}
+
+/* Card Info */
+.card-cell-info-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.card-cell-info {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+.card-cell-info:last-of-type{margin:0;}
+.card-cell-info h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'lato', Helvetica, Arial, Lucida, sans-serif;
+}
+.card-cell-info i {
+    font-size: 25px;
+    margin-right: 20px;
+    color: #14c2a3
+}
+
+/* Card Button */
+.card-cell-button {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.card-cell-button a {
+  	font: 600 16px 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+  	letter-spacing: 3px;
+    text-decoration: none;
+    color: #14c2a3;
+}
+
+.flickity-viewport:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cedbe9+0,aac5de+0,26558b+0,3a84c3+25,419ad6+40,419ad6+40,4bb8f0+50,4bb8f0+50,419ad6+60,3a8bc2+75,26558b+100 */
+    background: -moz-linear-gradient(top,  rgba(206,219,233,1) 0%, rgba(170,197,222,1) 0%, rgba(38,85,139,1) 0%, rgba(58,132,195,1) 25%, rgba(65,154,214,1) 40%, rgba(65,154,214,1) 40%, rgba(75,184,240,1) 50%, rgba(75,184,240,1) 50%, rgba(65,154,214,1) 60%, rgba(58,139,194,1) 75%, rgba(38,85,139,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(206,219,233,1) 0%,rgba(170,197,222,1) 0%,rgba(38,85,139,1) 0%,rgba(58,132,195,1) 25%,rgba(65,154,214,1) 40%,rgba(65,154,214,1) 40%,rgba(75,184,240,1) 50%,rgba(75,184,240,1) 50%,rgba(65,154,214,1) 60%,rgba(58,139,194,1) 75%,rgba(38,85,139,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(206,219,233,1) 0%,rgba(170,197,222,1) 0%,rgba(38,85,139,1) 0%,rgba(58,132,195,1) 25%,rgba(65,154,214,1) 40%,rgba(65,154,214,1) 40%,rgba(75,184,240,1) 50%,rgba(75,184,240,1) 50%,rgba(65,154,214,1) 60%,rgba(58,139,194,1) 75%,rgba(38,85,139,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedbe9', endColorstr='#26558b',GradientType=0 ); /* IE6-9 */
+
+
+    pointer-events: none;
+    z-index: -20;
+}
+
+.flickity-prev-next-button.next {
+    right: 5vw !important;
+}
+.flickity-prev-next-button.previous {
+    left: 5vw !important
+}
+.flickity-button {
+    transition: filter 0.5s;
+}
+.flickity-button,
+.flickity-button:hover {
+    background: #fff !important;
+    color: #14c2a3 !important;
+}
+.flickity-button:hover .flickity-button-icon {
+    fill: white !important;
+}
+.flickity-button:hover {
+    filter: drop-shadow(0px 0px 30px #14c2a3);
+}

@@ -1,0 +1,50 @@
+.flickity-viewport {
+  margin-top: 25%;
+  height: 1100px !important;
+}
+
+.carousel-course-card-cell {
+  height: 1000px;
+  width: 70%;
+}
+
+.card-cell-content {
+  width: 90%;
+  padding-top: 5rem;
+  flex-grow: 1;
+  height: 60%;
+}
+
+.card-cell-info h4 {
+  font-size: 1.5rem;
+}
+
+.card-cell-thumbnail {
+  height: 40%;
+}
+
+.card-cell-thumbnail img {
+  height: 100%;
+}
+
+.card-cell-text h2 {
+  font-size: 2rem;
+}
+
+.card-cell-text h3 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.card-cell-info h4 {
+  font-size: 1.5rem;
+}
+
+.but{
+  font-size: 1rem !important;
+}
+
+.card-cell-button {
+  position: relative;
+  bottom: 1rem;
+}
