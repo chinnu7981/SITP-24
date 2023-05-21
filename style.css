@@ -1,7 +1,37 @@
 html, body {margin:0;box-sizing: border-box;}
-body {background-color:rgb(38, 85, 139, 1);}
+body {
+    background-color:rgb(38, 85, 139, 1);
+}
 
-
+.section-title {
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: white;
+  }
+  
+  .section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20%;
+    height: 3px;
+    background: white;
+    bottom: 0;
+    left: 40%;
+  }
+  
+  .section-title p {
+    margin-bottom: 0;
+  }
+  
 /* Card Container */
 .carousel-course-card-cell {
     width: 350px;
