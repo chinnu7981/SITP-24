@@ -3,7 +3,8 @@
   text-align: center;
 }
 
-.section-title h2 {
+.section-title h1 {
+  margin-top: 28%;
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -12,7 +13,8 @@
   color: white;
 }
 
-.section-title h2::after {
+.section-title h1::after {
+
   content: "";
   position: absolute;
   display: block;
@@ -28,7 +30,7 @@
 }
 
 .flickity-viewport {
-  margin-top: 20%;
+  
   height: 1100px !important;
 }
 
