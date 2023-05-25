@@ -1202,7 +1202,7 @@ body{
 }
 
 .downloadBtn::before {
-  content: attr(data-text);
+/*   content: attr(data-text); */
   position: absolute;
   top: 0;
   left: 0;
