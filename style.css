@@ -3,11 +3,24 @@ body {
     background-color:rgb(38, 85, 139, 1);
 }
 
+.logo{
+  text-align: center;
+}
+.logo img{
+  width: 400px;
+}
+
+.logo p{
+  color: white;
+  font-size: 30px;
+  margin: 0;
+}
+
 .section-title {
     padding-bottom: 30px;
     text-align: center;
   }
-  
+
   .section-title h1 {
     font-size: 32px;
     font-weight: bold;
@@ -16,7 +29,7 @@ body {
     position: relative;
     color: white;
   }
-  
+
   .section-title h1::after {
     content: "";
     position: absolute;
@@ -27,11 +40,11 @@ body {
     bottom: 0;
     left: 40%;
   }
-  
+
   .section-title p {
     margin-bottom: 0;
   }
-  
+
 /* Card Container */
 .carousel-course-card-cell {
     width: 350px;
