@@ -72,10 +72,10 @@
 }
 
 .but{
-  font-size: 2rem !important;
+  font-size: 2.5rem !important;
 }
 
 .card-cell-button {
   position: relative;
-  bottom: 1rem;
+  bottom: 3rem;
 }
